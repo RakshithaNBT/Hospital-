@@ -1,0 +1,90 @@
+.intl-stats-bar { background: var(--gradient-primary); padding: 32px 0; }
+.intl-stats-grid { display: grid; grid-template-columns: repeat(4, 1fr); text-align: center; gap: 24px; }
+.intl-stat-num { font-family: var(--font-heading); font-size: 2.2rem; font-weight: 900; color: white; margin-bottom: 4px; }
+.intl-stat-label { font-size: 0.82rem; font-weight: 500; color: rgba(255,255,255,0.8); text-transform: uppercase; letter-spacing: 1px; }
+
+.intl-services-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 24px; }
+
+.intl-service-card {
+  background: white;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  padding: 28px 24px;
+  box-shadow: var(--shadow-sm);
+  transition: var(--transition-mid);
+}
+
+.intl-service-card:hover { box-shadow: var(--shadow-xl); border-color: rgba(0,119,182,0.2); }
+
+.isc-icon {
+  width: 56px; height: 56px;
+  background: linear-gradient(135deg, rgba(0,119,182,0.1), rgba(0,180,216,0.1));
+  border-radius: 16px;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 1.6rem; color: var(--primary);
+  margin-bottom: 16px;
+  transition: var(--transition-mid);
+}
+
+.intl-service-card:hover .isc-icon { background: var(--gradient-primary); color: white; transform: scale(1.1); }
+.isc-title { font-size: 1rem; font-weight: 700; color: var(--text-dark); margin-bottom: 10px; }
+.isc-desc { font-size: 0.83rem; color: var(--text-light); line-height: 1.65; }
+
+.intl-process-section { background: var(--off-white); }
+
+.process-steps { display: grid; grid-template-columns: repeat(4, 1fr); gap: 32px; position: relative; }
+.process-steps::before {
+  content: '';
+  position: absolute;
+  top: 40px; left: 10%; right: 10%;
+  height: 2px;
+  background: var(--gradient-primary);
+  z-index: 0;
+}
+
+.process-step { text-align: center; position: relative; z-index: 1; }
+
+.ps-number {
+  width: 80px; height: 80px;
+  background: var(--gradient-primary);
+  border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  font-family: var(--font-heading);
+  font-size: 1.8rem; font-weight: 900; color: white;
+  margin: 0 auto 20px;
+  box-shadow: 0 8px 24px rgba(0,119,182,0.3);
+}
+
+.ps-title { font-size: 1rem; font-weight: 700; color: var(--text-dark); margin-bottom: 8px; }
+.ps-desc { font-size: 0.83rem; color: var(--text-light); line-height: 1.65; }
+
+.intl-countries-section { background: white; }
+
+.countries-grid { display: flex; flex-wrap: wrap; gap: 12px; justify-content: center; }
+
+.country-tag {
+  display: inline-flex; align-items: center; gap: 8px;
+  padding: 10px 20px;
+  background: var(--light-bg);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-full);
+  font-size: 0.85rem; font-weight: 500; color: var(--text-mid);
+  transition: var(--transition-fast);
+}
+
+.country-tag svg { color: var(--primary); }
+.country-tag:hover { background: var(--primary); color: white; }
+.country-tag:hover svg { color: white; }
+.more-tag { background: var(--gradient-primary); color: white; border-color: transparent; }
+
+.intl-cta { background: var(--gradient-dark); padding: 80px 0; text-align: center; color: white; }
+.intl-cta-icon { font-size: 3rem; color: var(--teal); margin-bottom: 20px; }
+.intl-cta h2 { font-size: 2.2rem; font-weight: 900; color: white; margin-bottom: 12px; }
+.intl-cta p { font-size: 1rem; color: rgba(255,255,255,0.75); margin-bottom: 36px; }
+.intl-cta-btns { display: flex; gap: 16px; justify-content: center; flex-wrap: wrap; }
+.btn-outline-white { display: inline-flex; align-items: center; gap: 8px; padding: 14px 28px; border: 2px solid rgba(255,255,255,0.4); border-radius: var(--radius-full); color: white; font-weight: 600; font-size: 0.95rem; transition: var(--transition-mid); text-decoration: none; }
+.btn-outline-white:hover { background: rgba(255,255,255,0.1); border-color: rgba(255,255,255,0.7); }
+
+@media (max-width: 1200px) { .intl-services-grid { grid-template-columns: repeat(3, 1fr); } }
+@media (max-width: 900px) { .intl-services-grid { grid-template-columns: repeat(2, 1fr); } .process-steps { grid-template-columns: repeat(2, 1fr); } .process-steps::before { display: none; } .intl-stats-grid { grid-template-columns: repeat(2, 1fr); } }
+@media (max-width: 560px) { .intl-services-grid { grid-template-columns: 1fr; } .process-steps { grid-template-columns: 1fr; } }

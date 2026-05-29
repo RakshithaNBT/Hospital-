@@ -1,0 +1,150 @@
+.appt-section { background: var(--off-white); }
+
+.appt-container {
+  display: grid;
+  grid-template-columns: 1fr 1.4fr;
+  gap: 64px;
+  align-items: start;
+}
+
+/* ─ Benefits ─ */
+.benefit-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+  margin-bottom: 24px;
+  padding: 20px;
+  background: white;
+  border-radius: var(--radius-md);
+  border: 1px solid var(--border);
+  box-shadow: var(--shadow-sm);
+}
+
+.benefit-icon {
+  width: 48px; height: 48px; flex-shrink: 0;
+  background: linear-gradient(135deg, rgba(0,119,182,0.12), rgba(0,180,216,0.12));
+  border-radius: 12px;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 1.3rem; color: var(--primary);
+}
+
+.benefit-title { font-size: 0.95rem; font-weight: 700; color: var(--text-dark); margin-bottom: 4px; }
+.benefit-desc { font-size: 0.83rem; color: var(--text-light); }
+
+.appt-emergency-note {
+  background: #fef2f2;
+  border: 1px solid #fecaca;
+  border-radius: var(--radius-md);
+  padding: 16px 20px;
+  margin-top: 8px;
+}
+
+.appt-emergency-note strong { display: block; color: #dc2626; margin-bottom: 4px; }
+.appt-emergency-note p { font-size: 0.85rem; color: #7f1d1d; }
+.appt-emergency-note a { color: #dc2626; font-weight: 700; }
+
+/* ─ Form Card ─ */
+.appt-form-card {
+  background: white;
+  border-radius: var(--radius-xl);
+  padding: 40px;
+  box-shadow: var(--shadow-xl);
+  border: 1px solid var(--border);
+}
+
+.form-title {
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: var(--text-dark);
+  margin-bottom: 28px;
+  padding-bottom: 20px;
+  border-bottom: 2px solid var(--light-bg);
+}
+
+.appt-form { display: flex; flex-direction: column; gap: 16px; }
+
+.form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+
+.form-group { display: flex; flex-direction: column; gap: 6px; }
+
+.form-label {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 0.83rem;
+  font-weight: 600;
+  color: var(--text-mid);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.form-input {
+  padding: 13px 16px;
+  border: 2px solid var(--border);
+  border-radius: var(--radius-md);
+  font-size: 0.92rem;
+  font-family: var(--font-primary);
+  color: var(--text-dark);
+  background: var(--off-white);
+  transition: var(--transition-fast);
+  width: 100%;
+}
+
+.form-input:focus { border-color: var(--primary); background: white; box-shadow: 0 0 0 4px rgba(0,119,182,0.08); }
+.form-input.error { border-color: var(--error); }
+
+.form-textarea { resize: vertical; min-height: 100px; }
+
+.form-error { font-size: 0.75rem; color: var(--error); font-weight: 500; }
+
+.submit-btn { width: 100%; justify-content: center; padding: 16px; font-size: 1rem; margin-top: 8px; }
+.submit-btn:disabled { opacity: 0.7; cursor: not-allowed; }
+
+/* ─ Success Popup ─ */
+.success-overlay {
+  position: fixed; inset: 0;
+  background: rgba(0,0,0,0.6);
+  backdrop-filter: blur(8px);
+  z-index: var(--z-modal);
+  display: flex; align-items: center; justify-content: center;
+}
+
+.success-modal {
+  background: white;
+  border-radius: var(--radius-xl);
+  padding: 56px 48px;
+  text-align: center;
+  max-width: 440px;
+  width: 90%;
+  box-shadow: var(--shadow-xl);
+}
+
+.success-icon {
+  width: 80px; height: 80px;
+  background: linear-gradient(135deg, #dcfce7, #bbf7d0);
+  border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 2.5rem; color: #16a34a;
+  margin: 0 auto 24px;
+}
+
+.success-modal h2 { font-size: 1.6rem; color: var(--text-dark); margin-bottom: 12px; }
+.success-modal p { font-size: 0.92rem; color: var(--text-light); line-height: 1.7; margin-bottom: 12px; }
+
+.success-ref {
+  font-size: 0.85rem !important;
+  font-weight: 700;
+  color: var(--primary) !important;
+  background: var(--light-bg);
+  padding: 8px 16px;
+  border-radius: var(--radius-sm);
+  display: inline-block;
+  margin-bottom: 24px !important;
+}
+
+@media (max-width: 1024px) { .appt-container { grid-template-columns: 1fr; } }
+@media (max-width: 640px) { .form-row { grid-template-columns: 1fr; } .appt-form-card { padding: 24px; } }

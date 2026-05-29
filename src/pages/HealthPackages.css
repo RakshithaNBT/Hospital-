@@ -1,0 +1,29 @@
+.packages-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 28px; margin-bottom: 40px; }
+
+.pkg-full-card { background: white; border: 1px solid var(--border); border-radius: var(--radius-xl); overflow: hidden; box-shadow: var(--shadow-md); transition: var(--transition-mid); }
+.pkg-full-card:hover { box-shadow: var(--shadow-xl); }
+
+.pkgf-header { padding: 28px; color: white; position: relative; }
+.pkgf-tag { display: inline-block; padding: 4px 14px; background: rgba(255,255,255,0.25); border-radius: var(--radius-full); font-size: 0.72rem; font-weight: 700; margin-bottom: 12px; text-transform: uppercase; letter-spacing: 1px; }
+.pkgf-name { font-size: 1.2rem; font-weight: 800; margin-bottom: 6px; }
+.pkgf-tests { font-size: 0.83rem; color: rgba(255,255,255,0.82); margin-bottom: 16px; }
+.pkgf-price-wrap { display: flex; align-items: baseline; gap: 8px; flex-wrap: wrap; }
+.pkgf-price { font-family: var(--font-heading); font-size: 2rem; font-weight: 900; }
+.pkgf-original { font-size: 0.9rem; color: rgba(255,255,255,0.65); text-decoration: line-through; }
+.pkgf-save { padding: 3px 10px; background: rgba(255,255,255,0.25); border-radius: var(--radius-full); font-size: 0.72rem; font-weight: 700; }
+
+.pkgf-body { padding: 24px; }
+.pkgf-includes { display: flex; flex-direction: column; gap: 8px; }
+.pkgf-item { display: flex; align-items: center; gap: 10px; font-size: 0.85rem; color: var(--text-mid); }
+.pkgf-item svg { color: var(--success); font-size: 0.85rem; flex-shrink: 0; }
+.show-more { background: none; border: none; color: var(--primary); font-size: 0.83rem; font-weight: 600; cursor: pointer; padding: 4px 0; text-align: left; }
+.show-more:hover { text-decoration: underline; }
+
+.pkg-home-collection { background: var(--gradient-primary); border-radius: var(--radius-xl); padding: 32px 40px; display: flex; align-items: center; gap: 24px; flex-wrap: wrap; color: white; }
+.phc-icon { font-size: 2.5rem; flex-shrink: 0; }
+.pkg-home-collection h3 { font-size: 1.2rem; font-weight: 700; margin-bottom: 4px; }
+.pkg-home-collection p { font-size: 0.88rem; color: rgba(255,255,255,0.8); }
+.pkg-home-collection .btn-primary { margin-left: auto; background: white; color: var(--primary); flex-shrink: 0; }
+
+@media (max-width: 1100px) { .packages-grid { grid-template-columns: repeat(2, 1fr); } }
+@media (max-width: 640px) { .packages-grid { grid-template-columns: 1fr; } .pkg-home-collection { flex-direction: column; text-align: center; } .pkg-home-collection .btn-primary { margin-left: 0; } }
