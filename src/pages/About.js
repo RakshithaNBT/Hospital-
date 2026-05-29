@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { FiCheckCircle, FiGlobe, FiShield, FiTarget } from 'react-icons/fi';
-import { FaUserMd, FaHospital, FaStar, FaArrowRight } from 'react-icons/fa';
+import { FaUserMd, FaArrowRight } from 'react-icons/fa';
 
 const milestones = [
   { year: '1999', title: 'Founded', desc: 'GlobalCare was established with a 50-bed facility in Mumbai.' },

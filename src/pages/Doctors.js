@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
-import { FaUserMd, FaStar, FaSearch, FaFilter } from 'react-icons/fa';
-import { FiClock, FiDollarSign } from 'react-icons/fi';
+import { FaUserMd, FaStar, FaSearch } from 'react-icons/fa';
+import { FiClock } from 'react-icons/fi';
 import './Doctors.css';
 
 const allDoctors = [
@@ -26,7 +26,6 @@ const Doctors = () => {
   const [search, setSearch] = useState('');
   const [filter, setFilter] = useState('All');
   const [avail, setAvail] = useState(false);
-  const [selectedDoctor, setSelectedDoctor] = useState(null);
 
   const filtered = allDoctors.filter(d => {
     const matchSearch = d.name.toLowerCase().includes(search.toLowerCase()) || d.spec.toLowerCase().includes(search.toLowerCase());

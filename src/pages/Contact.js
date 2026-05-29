@@ -85,10 +85,10 @@ const Contact = () => {
             <div className="contact-social">
               <h4>Follow Us</h4>
               <div className="contact-social-links">
-                <a href="#" aria-label="WhatsApp"><FaWhatsapp /></a>
-                <a href="#" aria-label="Facebook"><FaFacebook /></a>
-                <a href="#" aria-label="Twitter"><FaTwitter /></a>
-                <a href="#" aria-label="Instagram"><FaInstagram /></a>
+                <a href="https://wa.me/911234567890" target="_blank" rel="noreferrer" aria-label="WhatsApp"><FaWhatsapp /></a>
+                <a href="https://facebook.com" target="_blank" rel="noreferrer" aria-label="Facebook"><FaFacebook /></a>
+                <a href="https://twitter.com" target="_blank" rel="noreferrer" aria-label="Twitter"><FaTwitter /></a>
+                <a href="https://instagram.com" target="_blank" rel="noreferrer" aria-label="Instagram"><FaInstagram /></a>
               </div>
             </div>
           </motion.div>

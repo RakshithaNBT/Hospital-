@@ -62,11 +62,11 @@ const Footer = () => {
                 Trusted by over 1 million patients across the globe.
               </p>
               <div className="footer-social">
-                <a href="#" aria-label="Facebook"><FaFacebook /></a>
-                <a href="#" aria-label="Twitter"><FaTwitter /></a>
-                <a href="#" aria-label="Instagram"><FaInstagram /></a>
-                <a href="#" aria-label="LinkedIn"><FaLinkedin /></a>
-                <a href="#" aria-label="YouTube"><FaYoutube /></a>
+                <a href="https://facebook.com" target="_blank" rel="noreferrer" aria-label="Facebook"><FaFacebook /></a>
+                <a href="https://twitter.com" target="_blank" rel="noreferrer" aria-label="Twitter"><FaTwitter /></a>
+                <a href="https://instagram.com" target="_blank" rel="noreferrer" aria-label="Instagram"><FaInstagram /></a>
+                <a href="https://linkedin.com" target="_blank" rel="noreferrer" aria-label="LinkedIn"><FaLinkedin /></a>
+                <a href="https://youtube.com" target="_blank" rel="noreferrer" aria-label="YouTube"><FaYoutube /></a>
               </div>
             </div>
 
@@ -134,10 +134,10 @@ const Footer = () => {
           <div className="footer-bottom-content">
             <p>&copy; 2024 GlobalCare Health Hospitals. All rights reserved.</p>
             <div className="footer-bottom-links">
-              <a href="#">Privacy Policy</a>
-              <a href="#">Terms of Service</a>
-              <a href="#">Cookie Policy</a>
-            </div>
+                <Link to="/privacy">Privacy Policy</Link>
+                <Link to="/terms">Terms of Service</Link>
+                <Link to="/cookies">Cookie Policy</Link>
+              </div>
           </div>
         </div>
       </div>

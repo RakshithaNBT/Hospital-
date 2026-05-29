@@ -1,7 +1,7 @@
 import React from 'react';
 import { useParams, Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
-import { FaHeartbeat, FaBrain, FaBone, FaLungs, FaChild, FaVenus, FaStethoscope, FaAmbulance, FaEye, FaTooth, FaMicroscope, FaArrowLeft } from 'react-icons/fa';
+import { FaHeartbeat, FaBrain, FaBone, FaLungs, FaChild, FaVenus, FaAmbulance, FaEye, FaTooth, FaMicroscope, FaArrowLeft } from 'react-icons/fa';
 import { GiKidneys } from 'react-icons/gi';
 import { FiActivity } from 'react-icons/fi';
 

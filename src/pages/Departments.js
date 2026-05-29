@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import {
   FaHeartbeat, FaBrain, FaBone, FaLungs, FaChild, FaVenus,
-  FaStethoscope, FaAmbulance, FaEye, FaTooth,
+  FaAmbulance, FaEye, FaTooth,
   FaArrowRight, FaMicroscope
 } from 'react-icons/fa';
 import { GiKidneys } from 'react-icons/gi';

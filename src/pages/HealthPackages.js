@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
-import { FaHeartbeat, FaCheckCircle, FaArrowRight } from 'react-icons/fa';
-import { FiHeart, FiActivity, FiStar } from 'react-icons/fi';
+import { FaCheckCircle, FaArrowRight } from 'react-icons/fa';
+import { FiHeart } from 'react-icons/fi';
 import './HealthPackages.css';
 
 const packages = [

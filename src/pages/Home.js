@@ -1,11 +1,11 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { Link } from 'react-router-dom';
-import { motion, useInView, useAnimation } from 'framer-motion';
+import { motion, useInView } from 'framer-motion';
 import {
   FaHeartbeat, FaUserMd, FaHospital, FaSmile, FaAmbulance,
   FaArrowRight, FaStar, FaQuoteLeft, FaChevronLeft, FaChevronRight,
   FaPlay, FaStethoscope, FaBrain, FaBone, FaLungs, FaChild,
-  FaVenus, FaEye, FaTooth
+  FaVenus
 } from 'react-icons/fa';
 import { FiCheckCircle, FiClock, FiGlobe, FiShield, FiPhone } from 'react-icons/fi';
 import './Home.css';
